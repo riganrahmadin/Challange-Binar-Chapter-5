@@ -41,7 +41,7 @@ exports.getCars = async (req, res) => {
 
     res
       .status(200)
-      .json({ message: "Successfully got cars data !", data: findedCars });
+      .json({ message: "Successfully Mendapatkan data!", data: findedCars });
   } catch (e) {
     errorHandler(res, e);
   }
@@ -52,7 +52,7 @@ exports.postCars = async (req, res) => {
     //validate car input
     const car = {
       ...req.body,
-      car_photo: `../upload/${req.file.filename}`,
+      car_photo: `../upload${req.file.filename}`,
       car_price: Number(req.body.car_price),
     };
     const validator = carValidator(car);
