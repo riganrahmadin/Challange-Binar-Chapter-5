@@ -78,7 +78,7 @@ exports.updateCars = async (req, res) => {
     //validate car input
     const car = {
       ...req.body,
-      car_photo: `../upload ${req.file.filename}`,
+      car_photo: `../public/images ${req.file.filename}`,
       car_price: Number(req.body.car_price),
     };
     const validator = carValidator(car);
