@@ -25,9 +25,21 @@ router.put("/cars/update/:id", updateCar);
 
 router.get("/cars/search", filterCars);
 
-router.use((req, res) => {
-  res.status(404);
-  res.send(`<h1>tidak ditemukan</h1>`);
-});
+
+
+const {
+  getCars,
+  postCars,
+  updateCars,
+  deleteCars,
+} = require("../controllers/apiController.js");
+
+const uploadFile = require("../middleware/uploadFile.js");
+
+router.get("/", getCars);
+router.post("/", uploadFile, postCars);
+router.put("/:id", uploadFile, updateCars);
+router.delete("/:id", deleteCars);
+
 
 module.exports = router;

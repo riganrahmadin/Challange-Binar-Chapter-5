@@ -11,7 +11,6 @@ const session = require("express-session");
 const cookieParse = require("cookie-parser");
 const flash = require("connect-flash");
 
-
 const PORT = 8080 
 //express server
 app.use(cors());
@@ -45,12 +44,12 @@ app.use("/", router);
 
 app.get("/api/v1", (req, res, next) => {
   try {
-      res.send(200).json(PORT);
+      res.send(200).json('');
   } catch (e) {
     console.error(e.message);
   }
 });
-app.use("/api/v1/cars", require("./routes/api.js"));
+app.use("/api/v1/cars", require("./routes/index.js"));
 
 
 app.listen(PORT, () => {
