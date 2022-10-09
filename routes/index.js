@@ -27,7 +27,7 @@ router.get("/cars/search", filterCars);
 
 router.use((req, res) => {
   res.status(404);
-  res.send(`<h1>tidak ditemukan/h1>`);
+  res.send(`<h1>tidak ditemukan</h1>`);
 });
 
 module.exports = router;
