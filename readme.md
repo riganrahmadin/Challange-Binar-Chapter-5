@@ -15,8 +15,8 @@ Menampilkan Hasil Search (POST) = http://localhost:8080/search <br>
 Api Server Side
 
 
-Create Car (POST) = http://localhost:8080/api/v1/cars
-Read All Cars (GET) = http://localhost:8080/api/v1/cars
-Update Car (PUT) = http://localhost:8080/api/v1/cars/:id
-Delele Car (DELETE) = http://localhost:8080/api/v1/cars/:id
+Create Car (POST) = http://localhost:8080/api/v1/cars <br>
+Read All Cars (GET) = http://localhost:8080/api/v1/cars <br>
+Update Car (PUT) = http://localhost:8080/api/v1/cars/:id <br>
+Delele Car (DELETE) = http://localhost:8080/api/v1/cars/:id <br>
 
