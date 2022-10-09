@@ -44,7 +44,7 @@ app.use("/", router);
 
 app.get("/api/v1", (req, res, next) => {
   try {
-      res.send(200).json('');
+      res.send(200).json(PORT);
   } catch (e) {
     console.error(e.message);
   }

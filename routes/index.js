@@ -26,7 +26,6 @@ router.put("/cars/update/:id", updateCar);
 router.get("/cars/search", filterCars);
 
 
-
 const {
   getCars,
   postCars,
@@ -36,7 +35,7 @@ const {
 
 const uploadFile = require("../middleware/uploadFile.js");
 
-router.get("/", getCars);
+router.get("/api/v1/cars", getCars);
 router.post("/", uploadFile, postCars);
 router.put("/:id", uploadFile, updateCars);
 router.delete("/:id", deleteCars);
