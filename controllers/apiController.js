@@ -3,6 +3,8 @@ const errorHandler = require("../middleware/errorHandler.js");
 const carValidator = require("../middleware/carValidator.js");
 const { Op, Sequelize} = require("sequelize");
 
+
+
 exports.getCars = async (req, res) => {
   const { id, size, name } = req.query;
   try {

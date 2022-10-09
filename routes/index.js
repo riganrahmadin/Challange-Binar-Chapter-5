@@ -37,9 +37,9 @@ const {
 const uploadFile = require("../middleware/uploadFile.js");
 
 router.get("/api/v1/cars", getCars);
-router.post("/api/v1/cars/", uploadFile, postCars);
-router.put("api/v1/cars/4", uploadFile, updateCars);
-router.delete("api/v1/cars/:id", deleteCars);
+router.post("/api/v1/cars", uploadFile, postCars);
+router.put("/api/v1/cars/:id", uploadFile, updateCars);
+router.delete("/api/v1/cars/:id", deleteCars);
 
 
 module.exports = router;
