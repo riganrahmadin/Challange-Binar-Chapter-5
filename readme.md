@@ -10,7 +10,6 @@ Menampilkan Hasil Filter Size (GET) = http://localhost:8080/cars/search?car_size
 Menampilkan Hasil Search (POST) = http://localhost:8080/search <br>
 
 
-<img src="./public/Screenshot 2022-10-09 191926.jpg">
 
 Api Server Side
 
@@ -19,4 +18,5 @@ Create Car (POST) = http://localhost:8080/api/v1/cars <br>
 Read All Cars (GET) = http://localhost:8080/api/v1/cars <br>
 Update Car (PUT) = http://localhost:8080/api/v1/cars/:id <br>
 Delele Car (DELETE) = http://localhost:8080/api/v1/cars/:id <br>
-
+<br>
+<img src="./public/Screenshot 2022-10-09 191926.jpg">
